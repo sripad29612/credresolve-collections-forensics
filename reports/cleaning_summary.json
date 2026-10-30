@@ -1,0 +1,70 @@
+{
+  "pipeline_run_at": "2026-10-30T12:44:07.558598",
+  "tables": {
+    "accounts": {
+      "raw_rows": 30000,
+      "clean_rows": 30000,
+      "quarantined_rows": 0,
+      "null_borrower_ids": 455,
+      "orphan_borrower_ids": 2458,
+      "total_principal": 12103665653.539997,
+      "total_outstanding": 10489035343.000101
+    },
+    "payments": {
+      "raw_rows": 25500,
+      "clean_rows": 24986,
+      "exact_duplicates_removed": 486,
+      "quarantined_conflicts": 28,
+      "clean_counts_by_status": {
+        "FAILED": 3676,
+        "REVERSED": 1253,
+        "SUCCESS": 17523,
+        "PENDING": 2534
+      },
+      "clean_amounts_by_status": {
+        "FAILED": 278391796.6300001,
+        "REVERSED": 94658651.01000006,
+        "SUCCESS": 1314693465.1399984,
+        "PENDING": 190081035.64999995
+      }
+    },
+    "calls": {
+      "raw_rows": 91350,
+      "clean_rows": 89921,
+      "exact_duplicates_removed": 1271,
+      "quarantined_conflicts": 158
+    },
+    "promises_to_pay": {
+      "raw_rows": 18000,
+      "clean_rows": 18000,
+      "exact_duplicates_removed": 0,
+      "quarantined_conflicts": 0,
+      "status_counts": {
+        "CANCELLED": 4543,
+        "KEPT": 4489,
+        "OPEN": 4415,
+        "BROKEN": 4553
+      },
+      "status_amounts": {
+        "CANCELLED": 228540634.90999994,
+        "KEPT": 224940356.85999995,
+        "OPEN": 221931494.15999994,
+        "BROKEN": 228796612.07000026
+      }
+    }
+  },
+  "quarantine_summary": {},
+  "financial_reconciliation": {
+    "payments": {
+      "raw_gross_recovery_success": 1341485926.3299973,
+      "raw_reversed_amount": 97398415.60000013,
+      "raw_net_recovery": 1244087510.7299972,
+      "clean_gross_recovery_success": 1314693465.1399984,
+      "clean_reversed_amount": 94658651.01000006,
+      "clean_net_realized_recovery": 1220034814.1299984,
+      "clean_excluded_failed_amount": 278391796.6300001,
+      "clean_excluded_pending_amount": 190081035.64999995
+    }
+  },
+  "referential_integrity": {}
+}

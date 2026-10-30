@@ -1,0 +1,39 @@
+# ==============================================================================
+# CredResolve Collections Forensics — Git Ignore Rules
+# ==============================================================================
+
+# 1. Raw Sensitive Dataset (Preserve Locally Only)
+collections_30k_dataset (1)/
+collections_30k_dataset/
+*.zip
+
+# 2. Sensitive PII Exception Reports
+reports/borrower_identity_exceptions.csv
+
+# 3. Scratch & Temporary Files
+scratch/
+*.tmp
+*.bak
+*.log
+
+# 4. Python Environment & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+.env.*
+
+# 5. Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# 6. OS & IDE Metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~

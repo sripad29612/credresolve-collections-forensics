@@ -1,0 +1,6 @@
+channel,total_outreach_events,distinct_accounts_contacted,attributed_payments_48h_last_touch,attributed_amount_48h_inr,share_of_attributed_amount_48h_pct,attributed_payments_7d_last_touch,attributed_amount_7d_inr,channel_cost_profile
+CALLS (Voice),89921,28408,475,34945757.2,2.66,1482,111823448.23,HIGH (Human Agent + Telephony Gateway)
+WHATSAPP,60600,25924,313,23043485.78,1.75,923,69235770.32,LOW (Per-message BSP Gateway)
+SMS,45000,23207,208,15458497.25,1.18,728,54910586.35,VERY LOW (Bulk Telco DLT)
+FIELD_VISITS,25000,16908,121,9492057.9,0.72,400,29382493.85,VERY HIGH (Feet-on-street Agency + Comm)
+ORGANIC / UNATTRIBUTED (No touch in 48h),0,0,16406,1231753667.01,93.69,13990,1049341166.39,ZERO (Self-cure / Direct Portal Settlement)
